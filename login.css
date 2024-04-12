@@ -1,0 +1,48 @@
+.login-top-head{
+    text-align: center;
+    /* background-color: rgb(255, 115, 0); */
+    
+}
+.login-form{
+    /* border: 1px solid black; */
+    width: 30%;
+    margin: auto;
+        
+}
+#email{
+
+    height: 45px;
+    width: 100%;
+    font-size: larger;
+}
+.pass-forget{
+    display: flex;
+    justify-content: space-between;
+}
+#password{
+    height: 45px;
+    width: 100%;
+    font-size: larger;
+
+}
+#signIn{
+    height: 45px;
+    width: 100%;
+    font-size: larger;
+    background-color: black;
+    color: white;
+    margin-bottom: 14px;
+    margin-top: 8px;
+}
+#createAcc{
+    height: 45px;
+    width: 100%;
+    font-size: larger;
+   border: none;
+   margin-bottom: 24px;
+
+}
+#createAcc>a{
+    text-decoration: none;
+    color: gray;
+}

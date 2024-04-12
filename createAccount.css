@@ -1,0 +1,43 @@
+.top-create-head{
+    text-align: center;
+    letter-spacing: 0.1em;
+}
+#createAcc-form{
+    width: 30%;
+    margin: auto;
+}
+#name{
+    height: 45px;
+    width: 100%;
+    font-size: larger;
+}
+#lastName{
+    height: 45px;
+    width: 100%;
+    font-size: larger;
+}
+#email{
+    height: 45px;
+    width: 100%;
+    font-size: larger;
+}
+#password{
+    height: 45px;
+    width: 100%;
+    font-size: larger;
+}
+.subscribe-box{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    padding-left: 54px;
+}
+#create-btn{
+    height: 45px;
+    width: 100%;
+    font-size: larger;
+    background-color: black;
+    color: white;
+    margin-bottom: 14px;
+    margin-top: 8px;
+}
