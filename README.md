@@ -4,7 +4,7 @@
  <h2>Author</h2>
   <li><a href="https://github.com/mihirdas77">@Mihir Das</a></li>
 
-![Bluefly Clone](https://your-clone-url.com/assets/bluefly_clone_banner.png)
+![Bluefly Clone](https://i.postimg.cc/Cx2rPVDQ/front.png)
 
 ## Description
 This project is a clone of Bluefly, a popular online fashion retailer. It is built using HTML, CSS, and JavaScript to replicate the core functionalities and design of the original website.
