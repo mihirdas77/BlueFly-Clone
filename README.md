@@ -17,7 +17,7 @@ This project is a clone of Bluefly, a popular online fashion retailer. It is bui
 - Responsive design for seamless experience across devices
 
 ## Demo
-[View Demo](https://bluefly-project-mihir.netlify.app/)
+[View Demo](https://bluefly-clone-project.netlify.app/)
 
 ## Screenshots
   <hr>
