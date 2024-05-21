@@ -1329,7 +1329,260 @@
     //      localStorage.setItem("product",JSON.stringify(ele));
     //      window.location.href="handbag.html";
     //    }
+    function myimgfun(ele){
+         console.log(ele);
+         localStorage.setItem("product",JSON.stringify(ele));
+         window.location.href="Beauty.html";
+       }
+       //Sort Logic
+       document.querySelector("#sortby").addEventListener("change",sortByPrice);
+       function sortByPrice(){
+        var sortData=document.querySelector("#sortby").value;
+
+          if(sortData=="dsc"){
+          data.sort(function(a,b){
+            if(a.price>b.price) return -1;
+            if(a.price<b.price) return 1;
+            return 0;
+          })
+       console.log(data)
+       displayData(data);
+          }
+
+       if(sortData=="asc"){
+          data.sort(function(a,b){
+            if(a.price>b.price) return 1;
+            if(a.price<b.price) return -1;
+            return 0;
+          })
+       console.log(data)
+       displayData(data)
+      }
+
+        if(sortData=="alpha"){
+      data.sort(function (a, b) {
+      if (a.detail > b.detail) return 1;
+      if (a.detail < b.detail) return -1;
+      return 0;
+    });
+
+    console.log(data);
+    displayData(data)
+        }
+        if(sortData=="pop"){
+      data.sort(function (a, b) {
+      if (a.strike > b.strike) return -1;
+      if (a.strike < b.strike) return 1;
+      return 0;
+    });
+
+    console.log(data);
+    displayData(data)
+        }
+    }
+    //end of Sort Logic
+     //checkBox Brand Logic
+     var a=b=c=d=0; var count1=0;
+    function funclick1(){
+        if(count1==0){
+            a=1;
+            count1++;  
+        }else{
+            a=0;
+            count1--;
+        }
        
+        abc1();
+    }
+    var count2=0;
+    function funclick2(){
+        if(count2==0){
+            b=1;
+            count2++;  
+        }else{
+            b=0;
+            count2--;
+        }
+        abc2();
+    }
+    var count3=0;
+    function funclick3(){
+        if(count3==0){
+            c=1;
+            count3++;  
+        }else{
+            c=0;
+            count3--;
+        }
+        abc3(); 
+    }
+    var count4=0;
+    function funclick4(){
+        if(count4==0){
+            d=1;
+            count4++;  
+        }else{
+            d=0;
+            count4--;
+        }
+        abc4();
+    }
+    var checkBoxArr=[];
+     
+    function abc1(){
+      if(a==1){
+        var w=[]
+        data.map(function(ele){
+          if(ele.proName=="BALENCIAGA"){
+            
+            w.push(ele);
+            displayData(w);
+          }
+        })
+      }else{
+        displayData(data);
+      }
+    }
+   function abc2(){
+      if(b==1){
+        var x=[]
+         data.map(function(ele){
+           if(ele.proName=="ALEXANDER MC QUEEN"){
+             x.push(ele);
+             displayData(x);
+           }
+         })
+       }else{
+         displayData(data);
+       }
+      }
+  function abc3(){
+       if(c==1){
+        var y=[];
+         data.map(function(ele){
+           if(ele.proName=="BOTTEGA VENETA"){
+             y.push(ele);
+             displayData(y);
+           }
+         })
+       }else{
+         displayData(data);
+       }
+      }
+       function abc4(){
+       if(d==1){
+         var z=[];
+         data.map(function(ele){
+           if(ele.proName=="DOLCE & GABBANA"){
+             z.push(ele);
+             displayData(z);
+           }
+         })
+       }else{
+         displayData(data);
+       }
+    }
+//End of CheckBox Brand
+//checkBox Price
+var a=b=c=d=0; var count1=0;
+    function funprice1(){
+        if(count1==0){
+            a=1;
+            count1++;  
+        }else{
+            a=0;
+            count1--;
+        }
+       
+        price1();
+    }
+    var count2=0;
+    function funprice2(){
+        if(count2==0){
+            b=1;
+            count2++;  
+        }else{
+            b=0;
+            count2--;
+        }
+        price2();
+    }
+    var count3=0;
+    function funprice3(){
+        if(count3==0){
+            c=1;
+            count3++;  
+        }else{
+            c=0;
+            count3--;
+        }
+        price3(); 
+    }
+    var count4=0;
+    function funprice4(){
+        if(count4==0){
+            d=1;
+            count4++;  
+        }else{
+            d=0;
+            count4--;
+        }
+        price4();
+    }
+
+    function price1(){
+      if(a==1){
+        var w=[]
+        data.map(function(ele){
+          if(ele.price < 200){
+            
+            w.push(ele);
+            displayData(w);
+          }
+        })
+      }else{
+        displayData(data);
+      }
+    }
+   function price2(){
+      if(b==1){
+        var x=[]
+         data.map(function(ele){
+           if(ele.price > 200 &&  ele.price < 500){
+             x.push(ele);
+             displayData(x);
+           }
+         })
+       }else{
+         displayData(data);
+       }
+      }
+  function price3(){
+       if(c==1){
+        var y=[];
+         data.map(function(ele){
+           if(ele.price>500 && ele.price<1000){
+             y.push(ele);
+             displayData(y);
+           }
+         })
+       }else{
+         displayData(data);
+       }
+      }
+       function price4(){
+       if(d==1){
+         var z=[];
+         data.map(function(ele){
+           if(ele.price>1000){
+             z.push(ele);
+             displayData(z);
+           }
+         })
+       }else{
+         displayData(data);
+       }
+    } 
 </script>
 
 
